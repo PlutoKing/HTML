@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传染病模型</title>
+    <link rel="stylesheet" type="text/css" href="../style/articlepage.css">
+    
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 >传染病模型</h1>
+    </div>
+    
+    <div class="content">
+        <h1> 1. 基础概念</h1>
+        <h2> 2. 五类人群</h2>
+        <p>为了描述疫情传播的发展规律，将人群分为五类：易感人群（Susceptible）、潜伏人群（Exposed）、感染人群（Infective）、移出人群（Recovery）、死亡人群（Death），具体说明如下：</p>
+        <table class="lftable">
+            <thead>
+                <tr>
+                    <th width="100">变量</th>
+                    <th width="40">符号</th>
+                    <th>解释</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>易感人群S</td>
+                    <td>`S`</td>
+                    <td>健康的人群，但有被感染的风险</td>
+                </tr>
+                <tr>
+                    <td>潜伏人群E</td>
+                    <td>`E`</td>
+                    <td>已经被传染但没有表现出明显症状的人群</td>
+                </tr>
+                <tr>
+                    <td>感染人群I</td>
+                    <td>`I`</td>
+                    <td>已经被传染且已经表现出某些症状的人群</td>
+                </tr>
+                <tr>
+                    <td>治愈人群R</td>
+                    <td>`R`</td>
+                    <td>被治愈的人群，其不再具有传染性</td>
+                </tr>
+                <tr>
+                    <td>死亡人群D</td>
+                    <td>`D`</td>
+                    <td>未被治愈，不幸死亡的人群</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>假设总人口为`N`，`t`时刻易感人群数目为`S(t)`，潜伏人群数目为`E(t)`，感染人群数目为`I(t)`，康复人群数目为`R(t)`，死亡人群数目为`D(t)`，它们之间满足</p>
+        <p class="lfmath">`S(t)+E(t)+I(t)+R(t)+D(t)=N`</p>
+        <p>不防作归一化处理，设总人口为`N=1`，则`S(t)`表示易感人群人数占总人口比例，`E(t)`表示潜伏人群人数占总人口比例，`I(t)`表示感染人群人数占总人口比例，`R(t)`表示康复人群人数占总人口比例，`D(t)`表示死亡人群人数占总人口比例，则</p>
+<script type="math/tex; mode=display">S(t)+E(t)+I(t)+R(t)+D(t)=1</script><h2 id="1-2-转换规律">
+    <a href="#1-2-转换规律" class="headerlink" title="1.2 转换规律"></a>1.2 转换规律</h2>
+<p>人群相互转变规律如下：</p>
+<ol>
+<li>`S\rightarrow E`：易感人群转变为潜伏人群</li>
+<li>`E\rightarrow I`：潜伏人群转变为感染人群</li>
+<li>`I\rightarrow R`：感染人群转变为治愈人群</li>
+<li>`I\rightarrow D`：感染人群转变为死亡人群</li>
+    </div>
+</body>
+</html>

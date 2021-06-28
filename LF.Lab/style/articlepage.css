@@ -1,0 +1,72 @@
+
+body
+{
+    font-family:Microsoft YaHei UI;
+    margin: 10;
+}
+
+.MathJax{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* 标题 */
+.header
+{
+    padding: 10px;
+    text-align: center;
+    font-family:Microsoft YaHei;
+}
+.content p
+{
+    text-indent: 2em;
+    
+}
+.content h1
+{
+    font-size: 24px;
+    font-family:Microsoft YaHei;
+    
+}
+
+.content h2
+{
+    font-size: 18px;
+    font-family:Microsoft YaHei;
+    color: cadetblue;
+}
+
+
+.lftable
+{
+    margin: 0 auto;
+}
+
+.lfmath
+{
+    text-align: center;
+}
+.content table th
+{
+    border-bottom:1px solid black
+} 
+
+.content p{
+    text-align: justify;
+}
+
+ol {
+    list-style: none;
+    counter-reset: sectioncounter
+}
+
+ol > li:before {
+    content:  counter(sectioncounter) ')  ';
+    counter-increment: sectioncounter;
+}
+
